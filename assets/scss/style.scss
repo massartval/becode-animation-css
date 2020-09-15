@@ -1,0 +1,100 @@
+/* --- Normalize --- */ 
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+figure, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+}
+
+/* --- Global --- */
+
+:root {
+    $primary-color: white;
+    $secondary-color: red;
+    $tertiary-color: lightgray;
+    $text-color: black;
+    --shadow-color: ;
+    --border-radius: em;
+    --main-padding: em;
+}
+
+/* --- Layout --- */
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 25em;
+    position: relative;
+}
+
+/* --- Styling --- */
+
+body {
+/*  background-color: $tertiary-color; */
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: $primary-color;
+}
+
+img {
+    max-width: 100%;
+}
+
+.red {
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+#date {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 3.5em;
+    width: 3.5em;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#photos {
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+article {
+    padding: 2rem;
+}
+
+.title { /* Y U NO WORK */
+    color: $secondary-color;
+    font-size: 2em;
+}
+
