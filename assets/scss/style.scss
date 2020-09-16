@@ -25,15 +25,15 @@ ul, ol {
 
 /* --- Global --- */
 
-:root {
-    $primary-color: white;
-    $secondary-color: red;
-    $tertiary-color: lightgray;
-    $text-color: black;
-    --shadow-color: ;
-    --border-radius: em;
-    --main-padding: em;
-}
+$primary-color: white;
+$secondary-color: red;
+$tertiary-color: lightgray;
+$text-color: black;
+/*
+$shadow-color: ;
+$border-radius: em;
+$main-padding: em;
+*/
 
 /* --- Layout --- */
 
@@ -55,7 +55,7 @@ body {
 /* --- Styling --- */
 
 body {
-/*  background-color: $tertiary-color; */
+    background-color: $tertiary-color; 
     font-family: sans-serif;
 }
 

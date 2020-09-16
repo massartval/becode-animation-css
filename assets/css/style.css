@@ -1,0 +1,122 @@
+/* --- Normalize --- */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+figure, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Global --- */
+/*
+$shadow-color: ;
+$border-radius: em;
+$main-padding: em;
+*/
+/* --- Layout --- */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 25em;
+  position: relative;
+}
+
+/* --- Styling --- */
+body {
+  background-color: lightgray;
+  font-family: sans-serif;
+}
+
+.card {
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+#date {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.5em;
+  width: 3.5em;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#photos {
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+
+article {
+  padding: 2rem;
+}
+
+.title {
+  /* Y U NO WORK */
+  color: red;
+  font-size: 2em;
+}
+/*# sourceMappingURL=style.css.map */

@@ -10,8 +10,7 @@ This project is a work in progress. I have already defined the general layout, b
 
 ## Remaining issues 
 
-* Live Sass Compiler error (line 58).
-* CSS file does not update anymore (see .title)
+
 
 ## Credits 
 
