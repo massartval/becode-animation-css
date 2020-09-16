@@ -6,18 +6,20 @@ This project was designed as an exercise during my training at [BeCode](https://
 
 ## Progression 
 
-This project is a work in progress. I have already defined the general layout, but the animation is missing. It also misses some styling.
+This project is a work in progress. I have already defined the general layout and the styling, but the animation is missing.
 
 ## Remaining issues 
 
+* Image scales but overflows vertically.
+* Text overflow should reveal upwards (current: downwards) and with a 400ms transition time (current: instant transition).
 
+Expected result : 
+* [Henrique](https://github.com/VieiraHenrique/becode-animation-css)
+* [Yvan](https://github.com/Goudmant/becode-animation-css)
 
 ## Credits 
 
 [normalize.css](https://github.com/necolas/normalize.css/blob/master/README.md)
-Pictures 
-Fonts
-Videos
 
 ## Github Page 
 

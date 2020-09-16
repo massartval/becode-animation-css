@@ -27,8 +27,9 @@ ul, ol {
 
 $primary-color: white;
 $secondary-color: red;
-$tertiary-color: lightgray;
+$tertiary-color: gray;
 $text-color: black;
+$background-color: lightgray;
 /*
 $shadow-color: ;
 $border-radius: em;
@@ -55,7 +56,7 @@ body {
 /* --- Styling --- */
 
 body {
-    background-color: $tertiary-color; 
+    background-color: $background-color; 
     font-family: sans-serif;
 }
 
@@ -63,8 +64,8 @@ body {
     background-color: $primary-color;
 }
 
-img {
-    max-width: 100%;
+img { 
+   max-width: 100%; 
 }
 
 .red {
@@ -79,7 +80,6 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     height: 3.5em;
     width: 3.5em;
     overflow: hidden;
@@ -88,13 +88,73 @@ img {
 #photos {
     padding: 0.5em;
     text-transform: uppercase;
+    position: relative;
+    top: -2em;
 }
 article {
+    color: $text-color;
     padding: 2rem;
+    padding-top: 0;
+    position: relative;
 }
 
-.title { /* Y U NO WORK */
+h1.title  { 
     color: $secondary-color;
     font-size: 2em;
+    font-weight: normal;
 }
 
+h2.title {
+    color: $text-color;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.gray {
+    color: $tertiary-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    li {
+        padding: 1em;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+}
+
+/* --- Animation --- */ 
+
+/* Image */ 
+.card {
+    overflow:hidden;
+    .image {
+        max-width: 100%;
+        
+        transition-duration: 400ms;
+        transition-property: transform;
+    }
+    &:hover {
+        .image {
+            transform: scale(1.5)
+        }
+    }
+}
+
+/* Text */
+.card {
+    cursor: pointer;
+
+    #text-overflow {
+        height: 0;
+        overflow: hidden;
+        transition-property: height, overflow;
+        transition-duration: 400ms;
+    }
+
+    &:hover {
+        #text-overflow {
+            height: auto;
+            overflow:visible;
+        }
+    }
+}

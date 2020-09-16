@@ -108,15 +108,86 @@ img {
 #photos {
   padding: 0.5em;
   text-transform: uppercase;
+  position: relative;
+  top: -2em;
 }
 
 article {
+  color: black;
   padding: 2rem;
+  padding-top: 0;
+  position: relative;
 }
 
-.title {
-  /* Y U NO WORK */
+h1.title {
   color: red;
   font-size: 2em;
+  font-weight: normal;
+}
+
+h2.title {
+  color: black;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+.gray {
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.gray li {
+  padding: 1em;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+/* --- Animation --- */
+/* Image */
+.card {
+  overflow: hidden;
+}
+
+.card .image {
+  max-width: 100%;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.card:hover .image {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+/* Text */
+.card {
+  cursor: pointer;
+}
+
+.card #text-overflow {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, overflow;
+  transition-property: height, overflow;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+}
+
+.card:hover #text-overflow {
+  height: auto;
+  overflow: visible;
 }
 /*# sourceMappingURL=style.css.map */
